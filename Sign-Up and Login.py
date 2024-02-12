@@ -37,3 +37,34 @@ def login(username, password):
                 return True
     print("Invalid username or password. Please try again.")
     return False
+
+def main():
+    print("Welcome to the Inventory Management System")
+
+    while True:
+        print("\n1. Sign up")
+        print("2. Log in")
+        print("3. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            username = input("Enter your username: ")
+            password = input("Enter your password: ")
+            sign_up(username, password)
+
+        elif choice == "2":
+            username = input("Enter your username: ")
+            password = input("Enter your password: ")
+            login(username, password)
+
+        elif choice == "3":
+            print("Exiting...")
+            break
+
+        else:
+            print("Invalid choice. Please try again")
+
+if _name_ == "_main_":
+    main()
+
