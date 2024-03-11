@@ -10,7 +10,10 @@ class InventoryManagementGUI:
         self.products = {'Apple': {'total': 50, 'sold': 0},
                          'Banana': {'total': 30, 'sold': 0},
                          'Orange': {'total': 40, 'sold': 0},
-                         'Grape': {'total': 25, 'sold': 0}}
+                         'Grape': {'total': 25, 'sold': 0}
+                         'blueberry': {'total': 35, 'sold': 0},
+                         'raspberry': {'total': 25, 'sold': 0 }
+        }
 
         # Initialize GUI components
         self.label = tk.Label(master, text="Inventory Management System")
